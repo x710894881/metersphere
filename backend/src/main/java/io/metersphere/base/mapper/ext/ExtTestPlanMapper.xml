@@ -88,6 +88,12 @@
                 <property name="object" value="${condition}.stage"/>
             </include>
         </if>
+        <if test="${condition}.principal != null">
+            and test_plan.creator
+            <include refid="condition">
+                <property name="object" value="${condition}.principal"/>
+            </include>
+        </if>
     </sql>
 
     <select id="list" resultType="io.metersphere.track.dto.TestPlanDTOWithMetric"
