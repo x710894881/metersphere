@@ -1798,6 +1798,7 @@ export default {
       title: "缺陷標題",
       description: "缺陷描述",
       status: "缺陷狀態",
+      issue_project:"所屬項目",
       platform: "平臺",
       operate: "操作",
       close: "關閉缺陷",

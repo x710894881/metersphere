@@ -1790,6 +1790,7 @@ export default {
       description: "Issue Description",
       status: "Issue Status",
       platform: "Platform",
+      issue_project:"Project",
       operate: "Operate",
       close: "Close",
       delete: "Delete",

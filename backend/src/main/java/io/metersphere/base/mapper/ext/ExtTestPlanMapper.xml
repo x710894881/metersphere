@@ -89,10 +89,11 @@
             </include>
         </if>
         <if test="${condition}.principal != null">
-            and test_plan.creator
+            and test_plan.id in (SELECT test_plan_id FROM test_plan_principal  WHERE principal_id
             <include refid="condition">
                 <property name="object" value="${condition}.principal"/>
             </include>
+            )
         </if>
     </sql>
 
