@@ -871,6 +871,7 @@ export default {
       create_tip: "注: 详细的接口信息可以在编辑页面填写",
       api_import: "接口导入",
       check_select: "请勾选接口",
+      api_project:"所属项目",
       select_comp: {
         no_data: "无数据",
         add_data: "去添加"

@@ -865,6 +865,7 @@ export default {
       create_tip: "Note: Detailed interface information can be filled out on the edit page",
       api_import: "Api Import",
       check_select: "Please check the API",
+      api_project:"Project",
       select_comp: {
         no_data: "No Data",
         add_data: "Add Data"
