@@ -154,8 +154,8 @@ DROP PROCEDURE IF EXISTS test_cursor;
 ALTER TABLE message_task
     DROP COLUMN organization_id;
 
-
-
+ALTER TABLE user
+    DROP COLUMN last_organization_id;
 
 -- 服务集成从组织转移到工作空间
 DROP PROCEDURE IF EXISTS test_cursor;
