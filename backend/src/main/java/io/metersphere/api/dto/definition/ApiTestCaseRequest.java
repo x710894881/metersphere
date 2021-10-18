@@ -32,4 +32,5 @@ public class ApiTestCaseRequest extends BaseQueryRequest {
     private String reviewId;
     private String deleteUserId;
     private long deleteTime;
+    private boolean toUpdate;
 }
