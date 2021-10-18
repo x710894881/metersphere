@@ -116,7 +116,7 @@
         </el-table>
       </el-col>
     </el-row>
-    <notice-template v-xpack ref="noticeTemplate"/>
+    <notice-template v-xpack ref="noticeTemplate" :variables="variables"/>
   </div>
 </template>
 
@@ -175,7 +175,26 @@ export default {
         {value: 'UPDATE', label: this.$t('commons.update')},
         {value: 'DELETE', label: this.$t('commons.delete')},
       ],
+      variables: [
+        'operator',
+        'id',
+        'title',
+        'status',
+        'createTime',
+        'updateTime',
+        'reporter',
+        'lastmodify',
+        'platform',
+        'projectId',
+        'creator',
+        'resourceId',
+        'num',
+        'platformStatus'
+      ]
     };
+  },
+  activated() {
+    this.initForm();
   },
   methods: {
     initForm() {
